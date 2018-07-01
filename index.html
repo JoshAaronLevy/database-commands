@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home | Database Commands</title>
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="dns-prefetch" href="//code.jquery.com" />
+  <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/shortcodes.css">
+  <link rel="stylesheet" href="/styles/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="navbar sticky-top paddings-0">
+    <div class="logo">
+      <i class="fas fa-less-than"></i>
+      <a href="/index.html" class="h1 mb-0">jL</a>
+      <i class="fas fa-greater-than"></i>
+    </div>
+    <nav class="main-nav">
+      <ul class="navbar-list">
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="#goals">Databases</a>
+        </li>
+        <li>
+          <a href="#learning">Learning</a>
+        </li>
+        <li>
+          <a href="#meetups">Meetups</a>
+        </li>
+        <li>
+          <a href="#about" data-toggle="modal" data-target=".about-me-modal">About Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="main-hero col-lg-12">
+    <section class="hero-designer col-xs-6 col-lg-6">
+      <div class="hero-inner">
+        <h1 class="animate fadeInLeft">Designer</h1>
+        <h2>HTML5/CSS3</h2>
+      </div>
+    </section>
+    <section class="hero-developer col-xs-6 col-lg-6">
+      <div class="hero-inner">
+        <h1 class="animate fadeInRight">Developer</h1>
+        <h2>JavaScript</h2>
+      </div>
+    </section>
+  </section>
+  <section id="goals" class="col-lg-10 offset-lg-1 col-xs-12 center pt-30 pb-50">
+    <section class="section">
+      <h1 class="pb-20">S.M.A.R.T. Goals</h1>
+    </section>
+    <div id="goal1" class="modal-box col-xs-12" data-toggle="modal" data-target=".goal-modal-1">
+      <i class="fas fa-flag-checkered icon-lg"></i>
+      <h3>{{ date }}</h3>
+      <div class="modal fade goal-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ date }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <i class="fas fa-flag-checkered icon-lg"></i>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <div class="modal-footer">
+              <a href="/articles/goals/05-03-2018.html" class="read-more">{{ readMore }} => </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="goal2" class="modal-box col-xs-12" data-toggle="modal" data-target=".goal-modal-2">
+      <i class="fas fa-flag-checkered icon-lg"></i>
+      <h3>{{ date }}</h3>
+      <div class="modal fade goal-modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ date }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <i class="fas fa-flag-checkered icon-lg"></i>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/goals/05-04-2018.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="goal3" class="modal-box col-xs-12" data-toggle="modal" data-target=".goal-modal-3">
+      <i class="fas fa-flag-checkered icon-lg"></i>
+      <h3>{{ date }}</h3>
+      <div class="modal fade goal-modal-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ date }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <i class="fas fa-flag-checkered icon-lg"></i>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/goals/05-06-2018.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="learning" class="col-lg-10 offset-lg-1 center pt-50 pb-50">
+    <section class="section">
+      <h1 class="pb-20">Learn to Learn</h1>
+    </section>
+    <div id="learning1" class="modal-box" data-toggle="modal" data-target=".learning-modal-1">
+      <i class="fas fa-lightbulb icon-lg"></i>
+      <h3>{{ title }}</h3>
+      <div class="modal fade learning-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ title }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/_G998NUroCI" allowfullscreen></iframe>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/learning/eliminate-distractions.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="learning2" class="modal-box" data-toggle="modal" data-target=".learning-modal-2">
+      <i class="fas fa-lightbulb icon-lg"></i>
+      <h3>{{ title }}</h3>
+      <div class="modal fade learning-modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ title }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/y_UfeYRUX1c" allowfullscreen></iframe>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/learning/practice-makes-perfect.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="learning3" class="modal-box" data-toggle="modal" data-target=".learning-modal-3">
+      <i class="fas fa-lightbulb icon-lg"></i>
+      <h3>{{ title }}</h3>
+      <div class="modal fade learning-modal-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ title }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/7LyM8fubIyA" allowfullscreen></iframe>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/learning/time-management.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="meetups" class="col-lg-10 offset-lg-1 center pt-50 pb-50">
+    <section class="section">
+      <h1 class="pb-20">Meetups</h1>
+    </section>
+    <div id="meetup1" class="modal-box" data-toggle="modal" data-target=".meetup-modal-1">
+      <i class="fas fa-handshake icon-lg"></i>
+      <h3>{{ title }}</h3>
+      <div class="modal fade meetup-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ title }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <i class="fas fa-handshake icon-lg"></i>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/meetups/code-for-denver.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="meetup2" class="modal-box" data-toggle="modal" data-target=".meetup-modal-2">
+      <i class="fas fa-handshake icon-lg"></i>
+      <h3>Insufficient Data</h3>
+      <div class="modal fade meetup-modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ title }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <i class="fas fa-handshake icon-lg"></i>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/meetups/data-discrepancies.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="meetup3" class="modal-box" data-toggle="modal" data-target=".meetup-modal-3">
+      <i class="fas fa-handshake icon-lg"></i>
+      <h3>{{ title }}</h3>
+      <div class="modal fade meetup-modal-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header center">
+              <h3 class="modal-title">{{ title }}</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="video-container">
+              <i class="fas fa-handshake icon-lg"></i>
+            </div>
+            <p class="snippet">{{ snippet }}</p>
+            <a href="/articles/meetups/denverscript-monthly.html" class="read-more">{{ readMore }} => </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade about-me-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header center">
+            <h3 class="modal-title">About Me</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="about-modal">
+            <div class="col-lg-3 img-wrap">
+              <img src="/assets/img/Josh-Levy-Profile.png" class="img-fluid" alt="Josh Levy">
+            </div>
+            <div class="col-lg-8">
+              <p class="snippet">When I got my first job in the tech industry burning software onto floppy disks, I never thought I would end
+                up becoming a developer.</p>
+              <p>However, now I am a full-stack web developer with a passion for delivering the best UX with the versatility
+                JavaScript frameworks provide.</p>
+              <p>I believe we're living in the most exciting time for technology. The opportunities and challenges we face now
+                are going to be solved by developers.</p>
+            </div>
+          </div>
+          <div class="modal-close">
+            <a href="/index.html" class="btn btn-danger mb-10 mt-10 inline">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class="footer-copy">
+      Copyright &copy; 2018 - All Rights Reserved - Josh Levy
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
